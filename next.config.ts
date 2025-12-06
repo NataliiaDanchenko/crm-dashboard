@@ -4,12 +4,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    // @ts-expect-error appDir пока не типизировано
-    appDir: true, // если используешь app/
+    // @ts-expect-error 
+    appDir: true, 
   },
   images: {
-    // если нужны локальные SVG/PNG из assets
-    unoptimized: true, // можно убрать, если не используешь оптимизацию
+    unoptimized: true, 
   },
 };
 
