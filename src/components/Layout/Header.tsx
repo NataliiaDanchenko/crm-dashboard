@@ -5,7 +5,7 @@ import avatar from '@/assets/icons-header/Rectangle 85.png';
 
 export default function Header() {
   return (
-    <header className='h-16 flex items-center justify-between px-6'>
+    <header className='h-16 flex items-center justify-between px-6 mt-2'>
       <div className='bg-[#0714290A] p-3.5 rounded-full'>
         <img src={iconSearch.src} alt='search icon' />
       </div>
