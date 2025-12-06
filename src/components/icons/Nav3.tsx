@@ -1,0 +1,36 @@
+import { FC, SVGProps } from 'react';
+
+const LocationIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+  return (
+    <svg
+      width='46'
+      height='46'
+      viewBox='0 0 46 46'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props} 
+    >
+      <path
+        d='M0 23C0 10.2975 10.2975 0 23 0C35.7025 0 46 10.2975 46 23C46 35.7025 35.7025 46 23 46C10.2975 46 0 35.7025 0 23Z'
+        fill='white'
+        fillOpacity='0.05'
+      />
+      <path
+        d='M23 23.8333C24.3807 23.8333 25.5 22.714 25.5 21.3333C25.5 19.9526 24.3807 18.8333 23 18.8333C21.6193 18.8333 20.5 19.9526 20.5 21.3333C20.5 22.714 21.6193 23.8333 23 23.8333Z'
+        stroke='currentColor'
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M23 31.3333C26.3333 28 29.6667 25.0152 29.6667 21.3333C29.6667 17.6514 26.6819 14.6667 23 14.6667C19.3181 14.6667 16.3333 17.6514 16.3333 21.3333C16.3333 25.0152 19.6667 28 23 31.3333Z'
+        stroke='currentColor'
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
+  );
+};
+
+export default LocationIcon;

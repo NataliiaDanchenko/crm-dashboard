@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CRM Dashboard Project
+
+This is a **CRM dashboard** project built with **Next.js 13 (App Router)** and **TailwindCSS**, featuring:
+
+- Custom UI components (`CardTop`, `CardRight`, buttons with icons, etc.)
+- Responsive grid layouts
+- Recharts line chart with custom tooltips and dots
+- Google Fonts (`Fixel Display` for headings, `Open Sans` for body text)
+- Sidebar navigation with icons
+- Header with search, notifications, theme toggle, and avatar
+
+---
+
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Technologies](#technologies)
+- [License](#license)
+
+---
+
+## Features
+
+- **CardTopList**: Shows key metrics with a small icon and subtitle.  
+- **CardRightList**: Detailed info cards with icons and descriptions.  
+- **Header**: Search, notifications, theme toggle, and user avatar.  
+- **Sidebar**: Navigation with icons and hover effects.  
+- **Buttons**: Active/inactive states with optional icons.  
+- **Charts**: Line chart using `Recharts` with custom tooltips and highlighted points.  
+- **Responsive layouts**: Grids adapt to smaller screens.  
+- **Fonts**: `Fixel Display` for headings, `Open Sans` for body text.  
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js v18+  
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
+git clone https://github.com/yourusername/crm-dashboard.git
+cd crm-dashboard
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+
+Run the development server:
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000
+ to view in the browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Available Scripts
 
-## Learn More
+dev — Run the development server
 
-To learn more about Next.js, take a look at the following resources:
+build — Create a production build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+start — Run the production server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+lint — Run TypeScript and ESLint checks
 
-## Deploy on Vercel
+Project Structure
+.
+├── app
+│   ├── layout.tsx         # Root layout with sidebar, header, content
+│   ├── page.tsx           # Main page (can be empty)
+│   └── globals.css        # Global styles
+├── components
+│   ├── UI
+│   │   ├── CardTop.tsx
+│   │   ├── CardRight.tsx
+│   │   └── Button.tsx
+│   ├── Layout
+│   │   ├── NavSidebar.tsx
+│   │   ├── Header.tsx
+│   │   ├── TitleButtons.tsx
+│   │   └── Content.tsx
+│   └── Icon
+│       └── Icon.tsx
+├── lib
+│   └── mockData.ts        # Mock data for cards and charts
+├── assets                  # Images and SVGs
+├── public                  # Public assets
+├── next.config.js
+└── package.json
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Technologies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 13
+ (App Router)
+
+TailwindCSS
+
+React
+
+Recharts
+
+Google Fonts
+
+TypeScript
+
+Fonts
+
+Headings: Fixel Display
+
+Body: Open Sans
+
+Imported via Google Fonts in app/layout.tsx:
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Fixel+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+
+License
+
+This project is licensed under the MIT License.
+
+Notes
+
+All UI components use TailwindCSS classes.
+
+Buttons support icons that disappear when active.
+
+Charts use custom tooltips and custom dots for highlighting key points.
+
+All cards and layout components are responsive and styled according to design mockups.
