@@ -19,7 +19,7 @@ export default function NavSidebar() {
 
       <div />
 
-      <ul className='flex flex-col gap-3.5 bg-[#0714290D] rounded-[20px] justify-self-center p-2.5 list-none m-0'>
+      <ul className='flex flex-col gap-3.5 bg-[#0714290D] rounded-[20px] justify-self-center list-none m-0'>
         {navIcons.map((IconSvg, idx) => (
           <li key={idx}>
             <Icon Svg={IconSvg} />
@@ -27,7 +27,7 @@ export default function NavSidebar() {
         ))}
       </ul>
 
-      <div className='self-end -mb-[50vh] pl-4'>
+      <div className='self-end -mb-[50vh] pl-4 pb-4'>
         <img src={backout.src} alt='backout' />
       </div>
     </aside>
